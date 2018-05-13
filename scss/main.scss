@@ -6,10 +6,12 @@ body {
 
 }
 
-.responsive {
+#gallery {
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
+	width: 100%;
+	height: auto;
 
 	.images {
 		width: 500px;
@@ -21,12 +23,13 @@ body {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	height: 300px;
+	height: 400px;
+	margin-top: 100px;
 
 	p {
 		margin-bottom: 20px;
 		overflow: scroll;
-		max-height: 300px;
+		max-height: 400px;
 	}
 }
 
@@ -67,3 +70,38 @@ body {
 	align-items: center;
 }
 
+#header {
+	height: 82px;
+	background-color: $secondary;
+	margin-bottom: 100px;
+	display: flex;
+	align-items: center;
+	color: $primary;
+
+	ul {
+		list-style-type: none;
+		height: 20px;
+		width: 200px;
+		display: flex;
+		justify-content: space-around;
+
+		li {
+			display: block;
+		}
+	}
+}
+
+
+#footer {
+	background-color: $secondary;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	color: $primary;
+	margin-top: 184px;
+
+	p:last-child {
+		margin-right: 20px;
+	}
+}
